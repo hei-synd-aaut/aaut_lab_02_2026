@@ -1043,7 +1043,7 @@
     {
         "id": "c9b02d1d7da2032c",
         "type": "ui-group",
-        "name": "Axis Coordinate System in Manual Mode, limits +/- 150 mm",
+        "name": "Axis Coordinate System in Manual Mode",
         "page": "66c6923e3822666a",
         "width": "6",
         "height": "1",
