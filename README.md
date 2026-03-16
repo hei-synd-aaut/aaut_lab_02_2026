@@ -201,7 +201,7 @@ With UI you can then modify values with NodeRED, select the value then submit.
 
 <div style="text-align: center;">
   <figure>
-    <img src="./img/ModifyPackTagCommandParameters.png"
+    <img src="./img/"
       alt="Image lost: ModifyPackTagCommandParameters.png"
       width="500">
     <figcaption>Modify PackTag Command Parameters</figcaption>
@@ -359,3 +359,6 @@ TYPE E_PackState :
 ) DINT;
 END_TYPE
 ```
+
+---
+## Check Axes settings in 
