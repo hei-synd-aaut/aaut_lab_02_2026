@@ -7532,8 +7532,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 780,
+        "x": 920,
+        "y": 940,
         "wires": []
     },
     {
@@ -7596,6 +7596,54 @@
         "wires": [
             [
                 "1767010b8f3ede3e"
+            ]
+        ]
+    },
+    {
+        "id": "04bcceea97060101",
+        "type": "inject",
+        "z": "2c31763846faff4a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 940,
+        "wires": [
+            [
+                "d539438c55ce6337"
+            ]
+        ]
+    },
+    {
+        "id": "d539438c55ce6337",
+        "type": "ctrlx-datalayer-request",
+        "z": "2c31763846faff4a",
+        "device": "e45e312c80fc001e",
+        "method": "BROWSE",
+        "path": "plc/app/Application/sym/PRG_Unit/ModuleOne",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 530,
+        "y": 940,
+        "wires": [
+            [
+                "2492f1b0ca066067"
             ]
         ]
     },
@@ -8217,6 +8265,7 @@
         "name": "make confirm errors",
         "func": "msg.payload = null;\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
