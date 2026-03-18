@@ -8,9 +8,11 @@
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
 
-# Exercice suggéré.
+# Exercices suggérés for Pack Hands-On.
 
 ## Ajouter un EM_Vision
+
+In ``HEVS_Physical_Model/PRG_Unit``.
 
 S'inspirer de EM_Exemple.
 
@@ -24,35 +26,45 @@ S'inspirer de EM_Exemple.
 ```iecst
 VAR
   xCameraOn         : BOOL; // Condition for resetting
+  uliCameraOn       : ULINT // Increment by 1 while in resetting
   xCameraOff        : BOOL; // Condition for Stopping
+  uliCameraOff      : ULINT // Increment by 1 while in stopping
   xCalibrateCamera  : BOOL; // Some time in starting
   tonCalibrate      : TON;  // About T#10s
 END_VAR
 ```
 
-### Add states for
+---
 
-1.  resetting / wait xCameraOn, reset xCameraOff and xCalibrateCamera
-2.  stopping  / wait xCameraOff then reset other flags
-3.  starting  / wait timer tonCalibrate
+### In EM_Vision Add methods for
 
-### Add warning
+> For the exercise, you will switch ``xCameraOn`` an ``xCameraOff`` using watch window, then PackInterface.
 
-in resetting, stopping and starting if time in state > 5s
+1.  **resetting** / wait ``xCameraOn``, reset ``xCameraOff`` and ``xCalibrateCamera``
+2.  **stopping**  / wait ``xCameraOff`` then reset other flags
+3.  **starting**  / wait timer tonCalibrate
 
-### Add alarm stop
+### Add 3 warning
+
+for **resetting**, **stopping** and **starting** if time in state > 5s
+
+### Add 1 alarm stop
 
 If state execute and xCameraOff, alarm stop.
 
+---
 
 ## Interface
 
 Add EM_Vision in arrayOfI_Module to display if EM is SC or not.
 
+:bulb: see end of ``PRG_Unit``
+
+---
 
 ## Add Command parameter
 
-Add in parameters of PackTag
+Add in parameters of PackTag. See: ``..HEVS_Tools/PRG_PackUpdate``
 
 ```iecst
 // Timer parameter for calibration with type converion.
