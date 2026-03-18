@@ -91,6 +91,26 @@ Add in parameters of PackTag. See: ``..HEVS_Tools/PRG_PackUpdate``
     PackTag.Command.Parameter_Lreal[9].ID := 2009;
     PackTag.Command.Parameter_Lreal[9].Name := 'User define 5';
 ```
+---
 
+## Check robot config
+
+<div style="text-align: center;">
+  <figure>
+    <img src="../img/Lin_x_positive_minus_239.png"
+      alt="Image lost: Lin_x_positive_minus_239"
+      width="500">
+    <figcaption>Robot config for axis X</figcaption>
+  </figure>
+</div>
+
+<div style="text-align: center;">
+  <figure>
+    <img src="../img/Lin_y_negative_minus_82.png"
+      alt="Image lost: Lin_y_negative_minus_82"
+      width="500">
+    <figcaption>Robot config for axis Y</figcaption>
+  </figure>
+</div>
 
 <!-- End of file -->
