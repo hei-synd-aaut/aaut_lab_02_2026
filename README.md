@@ -51,6 +51,15 @@ This means that EM_CheckSystem methods can be used internally by the unit (e.g.,
 - Be operated automatically via a sequence internal to the unit.
 - Be operated automatically via a procedure through a phase.
 
+---
+
+## Base for the work
+
+Use the program ``..\aaut_lab_02_2026\plc\AAut-lab-02_2026_V_3_6`` for the PLC.
+Use the node ``..\aaut_lab_02_2026\NodeRED\flow.json`` as test UI.
+
+---
+
 ## Part one / 1, of the lab.
 1.  Build a EM_CheckSystem on the model of EM_Example, see PLC Code.
 2.  EM_CheckSystem overrides three methods of EM_Abstract.
