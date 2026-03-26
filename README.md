@@ -60,6 +60,10 @@ Use the node ``..\aaut_lab_02_2026\NodeRED\flow.json`` as test UI.
 
 ---
 
+:warning: For tests, explain how you do the tests, for example by adding auxiliary variables.
+
+---
+
 ## Part one / 1, of the lab.
 1.  Build a EM_CheckSystem on the model of EM_Example, see PLC Code.
 2.  EM_CheckSystem overrides three methods of EM_Abstract.
@@ -125,7 +129,7 @@ See in program: ``HEVS_Tools/PRG_PackUpdate``
 
 ---
 **Call to alarms and warnings**
-:bulb: you can habe a look in the program: ``HEVS_Tools/PRG_TestAlarms`` for alarms and test effect with the UI from Node-RED.
+:bulb: you can have a look in the program: ``HEVS_Tools/PRG_TestAlarms`` for alarms and test effect with the UI from Node-RED.
 
 ```iecst
 fbSetAlarm_0(// Bit activation of Alarm and Ack

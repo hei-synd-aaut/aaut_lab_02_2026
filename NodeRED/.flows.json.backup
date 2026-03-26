@@ -546,7 +546,7 @@
         "id": "e45e312c80fc001e",
         "type": "ctrlx-config",
         "name": "Nodered_CtrlX",
-        "hostname": "192.168.0.200",
+        "hostname": "192.168.1.111",
         "debug": false
     },
     {
