@@ -78,7 +78,8 @@ Use the node ``..\aaut_lab_02_2026\NodeRED\flow.json`` as test UI.
     1.  The method set ``_enabled`` to Enable.
     2.  The method returns ``_enabled``,   
     3.  ``Stopping_SC`` is the inverse of the method, that is, ``NOT _enabled`` .
-5. Use and test ``EM_CheckSystem`` with the instance name ``emCheckSystem`` in the program ``PRG_Unit-``
+5. Perform the measurement with the sensor conversion, see the part two.
+6. Use and test ``EM_CheckSystem`` with the instance name ``emCheckSystem`` in the program ``PRG_Unit-``
 
 **Check and test your code**.
 
