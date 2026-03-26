@@ -7,6 +7,8 @@
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
+<b style='color:red;'>To check: unsuspending, add hold/unhold button, check state unsuspend SC in CM and EM abstract</b>
+
 # Lab Objective 02, Equipment Module
 Process a complete piece of equipment.
 - The equipment must perform a simple control task.
