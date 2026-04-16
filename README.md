@@ -25,12 +25,11 @@ title: ISA-88 overview
 ---
 classDiagram
 
-    Unit *-- EM_Abstract
-    EM_Abstract *-- CM_Abstract
+    Unit *-- EM_CheckSystem
+
     EM_Abstract <|-- EM_CheckSystem    
 
     Phase ..> EM_CheckSystem
-    Unit ..> EM_CheckSystem
 
     class EM_CheckSystem{
         -_enabled : BOOL
@@ -44,7 +43,9 @@ classDiagram
 
 ```
 
-:bulb: In this case, we use the **Dependency**, *the arrow with dashed line*. It indicates that the Phase use a method of the Equipment module.
+:bulb: In this case, we use the **Dependency**, *the arrow with dashed line*. It indicates that the Phase uses a method of the Equipment module.
+
+:warning: Usually the phase is not part of the PLC program.
 
 This means that EM_CheckSystem methods can be used internally by the unit (e.g., the programmable logic controller) or from an external call originating from a higher-level control system such as a SCADA system. The SCADA command can be sent automatically by a computer or by a human operator.
 
